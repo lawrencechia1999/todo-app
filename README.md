@@ -8,14 +8,14 @@ It has 3 parts to setup the project:
 Client: 
 - Run the command in your script before to 
 - Command:
-a. npm install
-b. npm run start
+1. npm install
+2. npm run start
 
 Server: 
 - Same as Client, run the install command following by run the project. 
-- Command: 
-a. npm install
-b. node index.js
+- Command:
+1. npm install
+2. node index.js
 
 Database: PostgreSQL 
 - You may setup table in your current PostgreSQL database by running the script, as it only contain 1 DB table to run the application. 
