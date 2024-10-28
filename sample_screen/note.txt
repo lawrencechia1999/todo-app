@@ -1,0 +1,1 @@
+This is a sample screen file for demo purposes.
