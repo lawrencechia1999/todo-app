@@ -25,7 +25,7 @@ Database: PostgreSQL
 
 # **Sample Screen**
 
-![Sample Screen 1](https://raw.githubusercontent.com/xxxxx/todo-app/master/sample_screen/sample_screen_1.png)
-![Sample Screen 2](https://raw.githubusercontent.com/xxxxx/todo-app/master/sample_screen/sample_screen_2.png)
+![Sample Screen 1](https://raw.githubusercontent.com/lawrencechia1999/todo-app/master/sample_screen/sample_screen_1.png)
+![Sample Screen 2](https://raw.githubusercontent.com/lawrencechia1999/todo-app/master/sample_screen/sample_screen_2.png)
 
 *** Hope you enjoy using my app. Thank you. ****
