@@ -173,12 +173,12 @@ const AddTask = ({ fetchTasks, setTasks, currentTask, setCurrentTask }) => {
                             </TextField>
                         </Grid>
 
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={3}>
                             <span>
                                 <b>Created Date Time: </b><DateFormatter dateString={created_datetime} />
                             </span>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={3}>
                             <span>
                                 <b>Updated Date Time: </b><DateFormatter dateString={updated_datetime} />
                             </span>
