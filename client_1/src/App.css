@@ -1,0 +1,139 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px; /* Max width for the list */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.header .status-buttons {
+  display: none; /* Initially hidden */
+}
+
+.header.show .status-buttons {
+  display: flex; /* Show when the rows are clicked */
+}
+
+.status-buttons button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.status-buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Task List Styles */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
+.task-name {
+  flex: 1; /* Allow the name to take remaining space */
+  color: #333;
+  padding-right: 15px; /* Space between name and buttons */
+  overflow-wrap: break-word; /* Allow long names to wrap */
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #28a745; /* Green for edit */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red for delete */
+  margin-left: 10px; /* Space between edit and delete buttons */
+}
+
+.edit-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .header h1 {
+      font-size: 20px;
+  }
+
+  .task-list li {
+      flex-direction: column; /* Stack items in a column on small screens */
+      align-items: flex-start;
+  }
+
+  .task-name {
+      padding-right: 0; /* Remove right padding for small screens */
+  }
+
+  .edit-button,
+  .delete-button {
+      width: 100%; /* Full-width buttons on small screens */
+      margin-top: 10px; /* Space between buttons */
+  }
+
+  .status-buttons {
+      flex-direction: column; /* Stack status buttons vertically */
+  }
+}
