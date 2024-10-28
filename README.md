@@ -23,4 +23,9 @@ Database: PostgreSQL
 - After setup table in your DB, please change the DB setting in server/.env for connection. 
 - By default, the table is created at 'public' schemas. 
 
+# **Sample Screen**
+
+![Sample Screen 1](https://raw.githubusercontent.com/xxxxx/todo-app/master/sample_screen/sample_screen_1.png)
+![Sample Screen 2](https://raw.githubusercontent.com/xxxxx/todo-app/master/sample_screen/sample_screen_2.png)
+
 *** Hope you enjoy using my app. Thank you. ****
